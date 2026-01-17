@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+}
+
+/* Оверлей */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* Текст */
+.overlay span {
+  font-size: 56px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+}
+
+.toverlay {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  filter: grayscale(100%);
+}
+
+#start:checked + .overlay {
+  display: none;
+}
+
+#start:checked ~ .content {
+  filter: none;
+}
+
+
+.test1 {
+background: #fff;
+ position: absolute;
+ height: 130px;
+ width: 250px;
+ left: 830px;
+ top: 565px;
+ border-radius: 20px;
+     filter: drop-shadow(0 0 10px #ffffff) 
+
+}
+
+
+#bg-video {
+    position: fixed;   /* Чтобы видео всегда было на фоне */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабирование видео под экран */
+    z-index: -1;       /* Отправляем видео за контент */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+
+.avatar {
+    position: absolute;
+    top: 250px;
+    left: 47%;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    
+}
+
+.name {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 380px;
+    left: 46%;
+    width: 120px;
+    font-size: 45px;
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 3px rgb(255, 255, 255));
+    
+}
+
+.name:hover {
+   transform: scale(1.1); /* увеличиваем */
+   transition: 0.9s;       /* плавный переход */
+   transition: transform 0.9s ease; /* плавное изменение */
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 3px rgb(255, 255, 255));
+    
+}
+
+.geo {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 450px;
+    left: 830px;
+    width: 120px;
+    font-size: 25px;
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 3px rgb(255, 255, 255));
+    white-space: nowrap;
+    
+}
+
+.geo:hover {
+   transform: scale(1.1); /* увеличиваем */
+   transition: 0.9s;       /* плавный переход */
+   transition: transform 0.9s ease; /* плавное изменение */
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 3px rgb(255, 255, 255));
+    
+}
+
+.ds {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 500px;
+    left: 940px;
+    width: 50px;
+    font-size: 25px;
+    filter: drop-shadow(0 0 10px #ffffff) drop-shadow(0 0 0px rgb(255, 255, 255));
+    white-space: nowrap;
+    
+}
+
+.t1 {
+    position: absolute;
+    left: 860px;
+    top: 570px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold; /* вот здесь добавляем жирность */
+        filter: drop-shadow(0 0 10px #acacac) 
+
+}
+
+
+
+
+
